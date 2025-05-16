@@ -1,26 +1,32 @@
+Absolutely! Below is the full `README.md` content that you can copy-paste **as-is** into your `README.md` file:
+
+---
+
+```markdown
 # 🚆 Pointo Railroad Route Solver
 
-This project solves **Problem Statement 1** from the POINTO Coding Assignment. It is built using **modern JavaScript (ES modules)**, follows clean coding practices, and includes comprehensive unit tests.
+This project solves **Problem Statement 1** from the POINTO Coding Assignment using **modern JavaScript (ES Modules)**. It reads a directed, weighted graph of train routes and answers a series of route-related questions using clean, modular logic and depth-first search (DFS).
 
 ---
 
 ## 📌 Problem Summary
 
-You're given a **directed, weighted graph** where:
+You're given a graph where:
 
-- **Nodes** = Cities (e.g. A, B, C)
-- **Edges** = One-way routes with distances (e.g. `AB5` = 5 units from A to B)
+- **Nodes** = Cities (e.g., A, B, C)
+- **Edges** = One-way routes with distances (e.g., `AB5` = 5 units from A to B)
 
-You are required to answer 10 questions:
+You're asked to:
 
-1. Calculate the distance of specific routes
-2. Count trips with stop constraints
-3. Find the shortest routes between cities
-4. Count cycles within a distance constraint
+- Calculate distances of specific routes
+- Count the number of valid trips under constraints
+- Determine the shortest route between cities
+- Count cycles within a distance limit
 
 ---
 
 ## 📂 Project Structure
+```
 
 pointo-railroad/
 ├── input.txt # Graph input (e.g., AB5, BC4...)
@@ -34,9 +40,7 @@ pointo-railroad/
 └── test/
 └── solver.test.js # Full test coverage using Jest
 
-yaml
-Copy
-Edit
+````
 
 ---
 
@@ -46,55 +50,60 @@ Edit
    ```bash
    git clone https://github.com/yourusername/pointo-railroad.git
    cd pointo-railroad
-   Install dependencies
+````
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
    ```
 
-bash
-Copy
-Edit
-npm install
-Ensure Node version is 18+
+3. **Ensure Node version is 18 or later**
 
-bash
-Copy
-Edit
-node -v
-▶️ Run the Application
-To calculate all 10 answers:
+   ```bash
+   node -v
+   ```
 
-bash
-Copy
-Edit
+---
+
+## ▶️ Run the Application
+
+To calculate and print all 10 outputs:
+
+```bash
 npm start
-✅ This will run src/index.js using the graph defined in input.txt and output the results.
+```
 
-🧪 Run Unit Tests
-Jest is configured to support ES modules via Node's experimental flags.
+✅ This will run `src/index.js` using the graph defined in `input.txt` and print answers to all questions.
 
-bash
-Copy
-Edit
+---
+
+## 🧪 Run Unit Tests
+
+Jest is configured to work with ES modules using the experimental VM module flag.
+
+```bash
 npm test
-If needed, run tests with:
+```
 
-bash
-Copy
-Edit
+If needed, run manually:
+
+```bash
 node --experimental-vm-modules node_modules/jest/bin/jest.js
-All major functions are unit tested:
+```
 
-Route distance
+Tests include:
 
-Trip count (with stop constraints)
+- Route distance checks
+- Trip count validation with stops
+- Shortest path resolution
+- Cycle count below distance thresholds
 
-Shortest path
+---
 
-Path count below a distance
+## ✨ Sample Output
 
-✨ Sample Output (with given input.txt)
-nginx
-Copy
-Edit
+```
 Output #1: 9
 Output #2: 5
 Output #3: 13
@@ -105,15 +114,47 @@ Output #7: 3
 Output #8: 9
 Output #9: 9
 Output #10: 7
-✏️ Modify Input
-Edit the input.txt file to define your own graph:
+```
 
-Copy
-Edit
+---
+
+## ✏️ Modify Input
+
+You can modify `input.txt` to test custom graphs:
+
+```
 AB5, BC4, CD8, DC8, DE6, AD5, CE2, EB3, AE7
-🧠 Algorithms Used
-DFS (Depth First Search) with backtracking and constraint checking
+```
 
-Visited path tracking to avoid infinite recursion in cyclic graphs
+---
 
-Manual shortest-path evaluation for small graphs (Dijkstra not required here)
+## 🧠 Algorithms Used
+
+- **DFS (Depth First Search)** for exploring all paths
+- Path pruning to avoid infinite recursion on cyclic routes
+- Basic edge/path validation
+- Shortest path search with depth tracking
+
+---
+
+## 📦 Tech Stack
+
+- Node.js
+- ES Modules
+- Jest (for testing)
+
+---
+
+## 👨‍💻 Author
+
+Built by \Kartik Bhardwaj as part of the **POINTO Coding Assignment – Problem Statement 1**.
+
+---
+
+## 📝 License
+
+This project is open-source and free to use.
+
+```
+
+```
