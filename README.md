@@ -2,7 +2,7 @@ Absolutely! Below is the full `README.md` content that you can copy-paste **as-i
 
 ---
 
-```markdown
+````markdown
 # 🚆 Pointo Railroad Route Solver
 
 This project solves **Problem Statement 1** from the POINTO Coding Assignment using **modern JavaScript (ES Modules)**. It reads a directed, weighted graph of train routes and answers a series of route-related questions using clean, modular logic and depth-first search (DFS).
@@ -25,31 +25,13 @@ You're asked to:
 
 ---
 
-## 📂 Project Structure
-```
-
-pointo-railroad/
-├── input.txt # Graph input (e.g., AB5, BC4...)
-├── jest.config.js # Jest config for ESM
-├── package.json # NPM metadata and scripts
-├── README.md # This documentation
-├── src/
-│ ├── graph.js # Graph parser and class
-│ ├── solver.js # Core algorithms (DFS-based)
-│ └── index.js # Main entry point for the app
-└── test/
-└── solver.test.js # Full test coverage using Jest
-
-````
-
----
-
 ## ⚙️ Setup Instructions
 
 1. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/pointo-railroad.git
    cd pointo-railroad
+   ```
 ````
 
 2. **Install dependencies**
