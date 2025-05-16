@@ -1,7 +1,3 @@
-Absolutely! Below is the full `README.md` content that you can copy-paste **as-is** into your `README.md` file:
-
----
-
 ````markdown
 # 🚆 Pointo Railroad Route Solver
 
